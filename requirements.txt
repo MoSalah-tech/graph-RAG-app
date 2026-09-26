@@ -1,0 +1,31 @@
+# conig / env
+python-dotenv
+truststore
+
+# Graph /DB
+neo4j
+
+# langchain ecosystem
+openai
+groq
+langchain
+langgraph
+langchain-openrouter
+langchain-groq
+langchain-openai
+langchain-neo4j
+langchain-experimental
+langchain-huggingface
+langchain-voyageai
+openrouter
+
+# web 
+fastapi 
+uvicorn[standard]
+sse-starlette
+pydantic-settings 
+
+
+# data ingestion 
+edgartools
+
