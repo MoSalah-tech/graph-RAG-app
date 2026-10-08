@@ -1,13 +1,14 @@
-from langchain_groq import ChatGroq
+from langchain_openai import ChatOpenAI
 from app.core.config import settings
 
-def get_llm() -> ChatGroq:
+def get_llm() -> ChatOpenAI:
 
-    return ChatGroq(
+    return ChatOpenAI(
 
-        api_key=settings.GROQ_API_KEY,
-        model=settings.LLM_MODEL,
+        api_key=settings.OPENROUTER_API_KEY,
+        base_url="https://openrouter.ai/api/v1",
+        model="nvidia/nemotron-3-super-120b-a12b:free",
         temperature=0,
-        reasoning_effort="medium",
+        max_retries=3
         
     )

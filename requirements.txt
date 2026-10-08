@@ -19,6 +19,12 @@ langchain-huggingface
 langchain-voyageai
 openrouter
 
+# dataset 
+
+datasets 
+pyarrow
+
+
 # web 
 fastapi 
 uvicorn[standard]
